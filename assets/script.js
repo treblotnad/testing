@@ -94,9 +94,7 @@ modalContent.addEventListener("click", function (e) {
     }
     localStorage.clear();
     addSearchHistory(e.target.textContent);
-    if (document.location.pathname == "/index.html") {
-      document.location = "./results.html";
-    }
+    document.location = "./results.html";
   }
 });
 
