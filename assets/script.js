@@ -94,6 +94,7 @@ modalContent.addEventListener("click", function (e) {
     }
     localStorage.clear();
     addSearchHistory(e.target.textContent);
+
     document.location = "./results.html";
   }
 });
@@ -107,3 +108,4 @@ function addSearchHistory(parkSearched) {
 
   localStorage.setItem(localStorage.length, parkSearched);
 }
+console.log(document.location);
